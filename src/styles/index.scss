@@ -1,9 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 #root {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #nav {
@@ -32,4 +41,9 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.chart {
+  height: calc(100% - 82px);
+  border: 1px solid #42b983;
 }

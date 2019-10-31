@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@antv/data-set": "^0.10.2",
+    "@antv/g2": "^3.5.9",
     "@rematch/core": "^1.2.0",
     "immer": "^5.0.0",
     "react": "^16.11.0",
