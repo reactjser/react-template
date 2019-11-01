@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Button, InputNumber } from 'antd';
 
 const About = ({
   count,
@@ -11,11 +12,11 @@ const About = ({
   return (
     <div className="about">
       <h1>This is an about page</h1>
-      <button onClick={increment}>同步+1</button>{' '}
-      <button onClick={incrementAsync}>异步+1</button>{' '}
-      <button onClick={decrement}>同步-1</button>{' '}
-      <button onClick={decrementAsync}>异步-1</button>{' '}
-      <input type="text" value={count} readOnly />
+      <Button type="primary" onClick={increment}>同步+1</Button>{' '}
+      <Button onClick={incrementAsync}>异步+1</Button>{' '}
+      <Button onClick={decrement}>同步-1</Button>{' '}
+      <Button onClick={decrementAsync}>异步-1</Button>{' '}
+      <InputNumber type="text" value={count} readOnly />
     </div>
   );
 };
