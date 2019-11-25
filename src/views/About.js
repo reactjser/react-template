@@ -7,12 +7,14 @@ const About = ({
   increment,
   incrementAsync,
   decrement,
-  decrementAsync
+  decrementAsync,
 }) => {
   return (
     <div className="about">
       <h1>This is an about page</h1>
-      <Button type="primary" onClick={increment}>同步+1</Button>{' '}
+      <Button type="primary" onClick={increment}>
+        同步+1
+      </Button>{' '}
       <Button onClick={incrementAsync}>异步+1</Button>{' '}
       <Button onClick={decrement}>同步-1</Button>{' '}
       <Button onClick={decrementAsync}>异步-1</Button>{' '}
@@ -22,19 +24,16 @@ const About = ({
 };
 
 const mapState = state => ({
-  count: state.counter.value
+  count: state.counter.value,
 });
 
 const mapDispatch = ({
-  counter: { increment, incrementAsync, decrement, decrementAsync }
+  counter: { increment, incrementAsync, decrement, decrementAsync },
 }) => ({
   increment: () => increment(1),
   incrementAsync: () => incrementAsync(1),
   decrement: () => decrement(1),
-  decrementAsync: () => decrementAsync(1)
+  decrementAsync: () => decrementAsync(1),
 });
 
-export default connect(
-  mapState,
-  mapDispatch
-)(About);
+export default connect(mapState, mapDispatch)(About);

@@ -11,6 +11,8 @@ const App = () => {
         </NavLink>
         {' | '}
         <NavLink to="/about">About</NavLink>
+        {' | '}
+        <NavLink to="/pie-chart">PieChart</NavLink>
       </div>
 
       <Switch>{Routes}</Switch>

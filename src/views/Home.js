@@ -7,8 +7,8 @@ const Home = () => {
   const [members, setMembers] = React.useState([
     {
       name: 'ronffy',
-      age: 30
-    }
+      age: 30,
+    },
   ]);
 
   React.useEffect(() => {
@@ -24,7 +24,7 @@ const Home = () => {
           setMembers(
             produce(members, draft => {
               draft[0].age++;
-            })
+            }),
           );
         }}
       />
